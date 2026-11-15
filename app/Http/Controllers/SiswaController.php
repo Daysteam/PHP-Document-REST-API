@@ -28,9 +28,9 @@ class SiswaController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'nama'    => 'required|max:100',
-            'kelas'   => 'required|max:20',
-            'jurusan' => 'required|max:20',
+            'nama'    => 'required|max:20',
+            'kelas'   => 'required|max:10',
+            'jurusan' => 'required|max:10',
         ]);
 
         try {
@@ -72,9 +72,9 @@ class SiswaController extends Controller
     public function update(Request $request, $id)
     {
         $validated = $request->validate([
-            'nama'    => 'required|max:100',
-            'kelas'   => 'required|max:20',
-            'jurusan' => 'required|max:20',
+            'nama'    => 'required|max:20',
+            'kelas'   => 'required|max:10',
+            'jurusan' => 'required|max:10',
         ]);
 
         try {
