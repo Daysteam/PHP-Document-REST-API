@@ -72,9 +72,9 @@ class SiswaController extends Controller
     public function update(Request $request, $id)
     {
         $validated = $request->validate([
-            'nama'    => 'required|max:20',
-            'kelas'   => 'required|max:10',
-            'jurusan' => 'required|max:10',
+            'nama'    => 'sometimes|max:20',
+            'kelas'   => 'sometimes|max:10',
+            'jurusan' => 'sometimes|max:10',
         ]);
 
         try {
